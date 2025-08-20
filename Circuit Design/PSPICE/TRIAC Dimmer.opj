@@ -31,6 +31,11 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (POT
+      (FullPartName "POT.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
       (LibraryName
@@ -84,17 +89,20 @@
       (FullPartName "2N5567.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\THYRISTR.OLB")
-      (DeviceIndex "0"))
-    (POT
-      (FullPartName "POT.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
       (DeviceIndex "0")))
   (MPSSessionName "zelli")
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Outputs"))
+      (Path "Design Resources"
+         "c:\users\zelli\documents\personal projects\engineering\triac-dimmer\circuit design\pspice\triac dimmer.dsn")
+      (Path "Design Resources"
+         "c:\users\zelli\documents\personal projects\engineering\triac-dimmer\circuit design\pspice\triac dimmer.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "c:\users\zelli\documents\personal projects\engineering\triac-dimmer\circuit design\pspice\triac dimmer.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -105,11 +113,11 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 52 1186 52 409")
-        (Scroll "560 305")
+        (Scroll "473 293")
         (Zoom "264")
         (Occurrence "/"))
       (Path
-         "C:\USERS\ZELLI\DOCUMENTS\PERSONAL PROJECTS\TRIAC DIMMER\CIRCUIT DESIGN\PSPICE\TRIAC DIMMER.DSN")
+         "C:\USERS\ZELLI\DOCUMENTS\PERSONAL PROJECTS\ENGINEERING\TRIAC-DIMMER\CIRCUIT DESIGN\PSPICE\TRIAC DIMMER.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1")))
   (LastUsedLibraryBrowseDirectory
