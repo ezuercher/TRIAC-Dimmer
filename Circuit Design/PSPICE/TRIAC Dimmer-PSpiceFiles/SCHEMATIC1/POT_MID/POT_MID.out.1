@@ -1,0 +1,195 @@
+
+**** 05/07/25 15:51:09 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-POT_MID"  [ c:\users\zelli\documents\personal projects\triac dimmer\circuit design\pspice\triac dimmer-pspic
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "POT_MID.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\zelli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Cadence\SPB_17.2\tools\capture\library\st_diacs_pspice\st_diacs.lib" 
+.lib "C:\Cadence\SPB_17.2\tools\pspice\library\INA2128.lib" 
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 30ms 0 100us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TRIAC DIMMER
+C_C1         0 N05563  100n  TC=0,0 
+V_V1         N00210 0  AC 0
++SIN 0 169.7 60 0 0 0
+X_X2         N00238 N05567 0 T2500D
+X_X1         N05563 N05567 SMDB3
+R_RL         N00238 N00210  150 TC=0,0 
+R_R1         N05563 N06721  1.62k TC=0,0 
+R_R2         N06721 N00238  1 TC=0,0 
+
+**** RESUMING POT_MID.cir ****
+.END
+
+**** 05/07/25 15:51:09 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-POT_MID"  [ c:\users\zelli\documents\personal projects\triac dimmer\circuit design\pspice\triac dimmer-pspic
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_X2.X1.Dgk     X_X2.X1.Delay   X_X2.X1.Dak     X_X1.X1.DZ14V   
+          IS  100.000000E-18    1.000000E-12   40.000000E-12    3.142000E-15 
+         ISR                                                    1.973000E-09 
+          BV                                                   13.6          
+         IBV                                                     .14467      
+         NBV                                                    1.093        
+        IBVL                                                  100.000000E-06 
+        NBVL                                                    1.2722       
+          RS    5                .01                             .1          
+         CJO   50.000000E-12    5.000000E-12    5.000000E-12                 
+          VJ                                                     .75         
+           M                                                     .3282       
+        TBV1                                                    1.433300E-03 
+
+
+               X_X1.X1.DZ19V   
+          IS    6.994000E-15 
+         ISR    2.088000E-09 
+          BV   19            
+         IBV     .17098      
+         NBV    1.2072       
+        IBVL    2.002000E-03 
+        NBVL    1.1457       
+          RS    5.612        
+          VJ     .75         
+           M     .2906       
+        TBV1  888.890000E-06 
+
+
+**** 05/07/25 15:51:09 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-POT_MID"  [ c:\users\zelli\documents\personal projects\triac dimmer\circuit design\pspice\triac dimmer-pspic
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_X2.X1.Vswitch X_X1.X1._S1     
+         RON     .043333        2.2          
+        ROFF   70.000000E+03   10.000000E+06 
+         VON    5                .99         
+        VOFF    1.5              .1          
+
+
+**** 05/07/25 15:51:09 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-POT_MID"  [ c:\users\zelli\documents\personal projects\triac dimmer\circuit design\pspice\triac dimmer-pspic
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00210)    0.0000 (N00238) 24.16E-24 (N05563) 285.2E-24 (N05567)-10.06E-24     
+
+(N06721) 24.32E-24 (X_X1.X1.TRG)-10.06E-24                                      
+
+(X_X2.X1.MT20) 24.15E-24              (X_X2.X1.MT21)    0.0000                  
+
+(X_X2.X1.MT22)    0.0000              (X_X2.X1.MT23) 24.15E-24                  
+
+(X_X2.X1.dlay1) 113.5E-21             (X_X2.X1.dlay2)-243.3E-21                 
+
+(X_X2.X1.dvdt0) 24.16E-24             (X_X2.X1.dvdt1)    0.0000                 
+
+(X_X2.X1.dvdt2)    0.0000             (X_X2.X1.gate1)-5.234E-24                 
+
+(X_X2.X1.gate2)    0.0000             (X_X2.X1.main1)    0.0000                 
+
+(X_X2.X1.main2)    0.0000             (X_X2.X1.main4)    1.0000                 
+
+(X_X1.X1.N01041) 285.2E-24            (X_X1.X1.N01060) 995.9E-21                
+
+(X_X1.X1.N02098)-10.06E-24            (X_X1.X1.N06161) 20.71E-18                
+
+(X_X1.X1.N10655) 100.4E-18            (X_X2.X1.cnhold)    0.0000                
+
+(X_X2.X1.cnmain)    0.0000            (X_X2.X1.cntrol)-3.384E-12                
+
+(X_X2.X1.contot)    0.0000            (X_X2.X1.dlayr1) 113.5E-21                
+
+(X_X2.X1.dlayr2)-243.3E-21            (X_X2.X1.main1r)    0.0000                
+
+(X_X2.X1.main2r)    0.0000            (X_X2.X1.cnholdr)    0.0000               
+
+(X_X2.X1.cnmainr)    0.0000           (X_X2.X1.cntrolr)-3.384E-12               
+
+(X_X2.X1.condvdt)    0.0000           (X_X2.X1.congate)    0.0000               
+
+(X_X2.X1.contotr)    0.0000           
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.610E-25
+    X_X2.X1.VIak   0.000E+00
+    X_X2.X1.VIka   0.000E+00
+    X_X2.X1.VdVdt   0.000E+00
+    X_X2.X1.VIgf  -1.610E-25
+    X_X1.X1.V_IDIAC1  -1.610E-25
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/07/25 15:51:09 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-POT_MID"  [ c:\users\zelli\documents\personal projects\triac dimmer\circuit design\pspice\triac dimmer-pspic
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .34
+

@@ -1,0 +1,21 @@
+** Profile: "SCHEMATIC1-POT_MID"  [ c:\users\zelli\documents\personal projects\triac dimmer\circuit design\pspice\triac dimmer-pspicefiles\schematic1\pot_mid.sim ] 
+
+** Creating circuit file "POT_MID.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\zelli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Cadence\SPB_17.2\tools\capture\library\st_diacs_pspice\st_diacs.lib" 
+.lib "C:\Cadence\SPB_17.2\tools\pspice\library\INA2128.lib" 
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 150ms 0 100us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
