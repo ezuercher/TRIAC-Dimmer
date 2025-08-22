@@ -1,7 +1,7 @@
 
-**** 06/04/25 08:44:20 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 08/22/25 12:15:36 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-POT_MID"  [ c:\users\zelli\documents\personal projects\triac dimmer\circuit design\pspice\triac dimmer-pspic
+ ** Profile: "SCHEMATIC1-POT_MID"  [ C:\Users\zelli\Documents\Personal Projects\Electronics\TRIAC-Dimmer\Circuit Design\PSPICE\triac 
 
 
  ****     CIRCUIT DESCRIPTION
@@ -40,14 +40,23 @@ X_X2         N00238 N05567 0 T2500D
 X_X1         N05563 N05567 SMDB3
 R_RL         N00238 N00210  150 TC=0,0 
 R_R1         N05563 N10603  1.62k TC=0,0 
-R_R2         N10603 N00238  200k TC=0,0 
+X_RP         N00238 N00238 N10603 POT PARAMS: SET=0.0 VALUE=200K
 
 **** RESUMING POT_MID.cir ****
 .END
-
-**** 06/04/25 08:44:20 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-POT_MID"  [ c:\users\zelli\documents\personal projects\triac dimmer\circuit design\pspice\triac dimmer-pspic
+
+WARNING(ORPSIM-15223): Library file C:\Cadence\SPB_17.2\tools\pspice\library\INA2128.lib has changed since index file INA2128.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Tue Nov 29 18:43:11 2022 to Tue Nov 29 17:43:11 2022.
+
+INFO(ORPSIM-15422): Making new index file INA2128.ind for library file INA2128.lib.
+
+Index has 4 entries from 1 file(s).
+
+**** 08/22/25 12:15:36 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-POT_MID"  [ C:\Users\zelli\Documents\Personal Projects\Electronics\TRIAC-Dimmer\Circuit Design\PSPICE\triac 
 
 
  ****     Diode MODEL PARAMETERS
@@ -87,9 +96,9 @@ R_R2         N10603 N00238  200k TC=0,0
         TBV1  888.890000E-06 
 
 
-**** 06/04/25 08:44:20 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 08/22/25 12:15:36 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-POT_MID"  [ c:\users\zelli\documents\personal projects\triac dimmer\circuit design\pspice\triac dimmer-pspic
+ ** Profile: "SCHEMATIC1-POT_MID"  [ C:\Users\zelli\Documents\Personal Projects\Electronics\TRIAC-Dimmer\Circuit Design\PSPICE\triac 
 
 
  ****     Voltage Controlled Switch MODEL PARAMETERS
@@ -107,9 +116,9 @@ R_R2         N10603 N00238  200k TC=0,0
         VOFF    1.5              .1          
 
 
-**** 06/04/25 08:44:20 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 08/22/25 12:15:36 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-POT_MID"  [ c:\users\zelli\documents\personal projects\triac dimmer\circuit design\pspice\triac dimmer-pspic
+ ** Profile: "SCHEMATIC1-POT_MID"  [ C:\Users\zelli\Documents\Personal Projects\Electronics\TRIAC-Dimmer\Circuit Design\PSPICE\triac 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -122,29 +131,29 @@ R_R2         N10603 N00238  200k TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00210)    0.0000 (N00238)-5.430E-24 (N05563)-7.305E-21 (N05567) 2.263E-24     
+(N00210)    0.0000 (N00238)-5.808E-24 (N05563)-68.54E-24 (N05567) 2.420E-24     
 
-(N10603)-7.246E-21 (X_X1.X1.TRG) 2.263E-24                                      
+(N10603)-5.808E-24 (X_X1.X1.TRG) 2.420E-24                                      
 
-(X_X2.X1.MT20)-5.430E-24              (X_X2.X1.MT21)    0.0000                  
+(X_X2.X1.MT20)-5.807E-24              (X_X2.X1.MT21)    0.0000                  
 
-(X_X2.X1.MT22)    0.0000              (X_X2.X1.MT23)-5.430E-24                  
+(X_X2.X1.MT22)    0.0000              (X_X2.X1.MT23)-5.807E-24                  
 
 (X_X2.X1.dlay1) 113.5E-21             (X_X2.X1.dlay2)-243.3E-21                 
 
-(X_X2.X1.dvdt0) 5.430E-24             (X_X2.X1.dvdt1)    0.0000                 
+(X_X2.X1.dvdt0) 5.808E-24             (X_X2.X1.dvdt1)    0.0000                 
 
-(X_X2.X1.dvdt2)    0.0000             (X_X2.X1.gate1) 1.177E-24                 
+(X_X2.X1.dvdt2)    0.0000             (X_X2.X1.gate1) 1.258E-24                 
 
 (X_X2.X1.gate2)    0.0000             (X_X2.X1.main1)    0.0000                 
 
 (X_X2.X1.main2)    0.0000             (X_X2.X1.main4)    1.0000                 
 
-(X_X1.X1.N01041)-7.305E-21            (X_X1.X1.N01060)-649.6E-21                
+(X_X1.X1.N01041)-68.54E-24            (X_X1.X1.N01060)-796.1E-21                
 
-(X_X1.X1.N02098) 2.263E-24            (X_X1.X1.N06161) 17.44E-18                
+(X_X1.X1.N02098) 2.420E-24            (X_X1.X1.N06161) 19.71E-18                
 
-(X_X1.X1.N10655) 98.42E-18            (X_X2.X1.cnhold)    0.0000                
+(X_X1.X1.N10655) 99.30E-18            (X_X2.X1.cnhold)    0.0000                
 
 (X_X2.X1.cnmain)    0.0000            (X_X2.X1.cntrol)-3.384E-12                
 
@@ -166,12 +175,12 @@ R_R2         N10603 N00238  200k TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1        -3.620E-26
+    V_V1        -3.872E-26
     X_X2.X1.VIak   0.000E+00
     X_X2.X1.VIka   0.000E+00
     X_X2.X1.VdVdt   0.000E+00
-    X_X2.X1.VIgf   3.620E-26
-    X_X1.X1.V_IDIAC1   3.620E-26
+    X_X2.X1.VIgf   3.872E-26
+    X_X1.X1.V_IDIAC1   3.872E-26
 
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
@@ -179,9 +188,9 @@ R_R2         N10603 N00238  200k TC=0,0
 
           JOB CONCLUDED
 
-**** 06/04/25 08:44:20 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 08/22/25 12:15:36 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-POT_MID"  [ c:\users\zelli\documents\personal projects\triac dimmer\circuit design\pspice\triac dimmer-pspic
+ ** Profile: "SCHEMATIC1-POT_MID"  [ C:\Users\zelli\Documents\Personal Projects\Electronics\TRIAC-Dimmer\Circuit Design\PSPICE\triac 
 
 
  ****     JOB STATISTICS SUMMARY
@@ -191,5 +200,5 @@ R_R2         N10603 N00238  200k TC=0,0
 
 
 
-  Total job time (using Solver 1)   =         .41
+  Total job time (using Solver 1)   =        2.03
 

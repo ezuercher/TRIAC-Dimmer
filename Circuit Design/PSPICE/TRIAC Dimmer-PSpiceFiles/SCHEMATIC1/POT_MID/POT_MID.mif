@@ -1,4 +1,5 @@
  lib=C:\Cadence\SPB_17.2\tools\capture\library\st_diacs_pspice\st_diacs.lib, offset=6113, size=144
  lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\thyristr.lib, offset=133547, size=261
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\breakout.lib, offset=9201, size=133
  lib=C:\Cadence\SPB_17.2\tools\capture\library\st_diacs_pspice\st_diacs.lib, offset=3833, size=1702
  lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\thyristr.lib, offset=75482, size=3797
